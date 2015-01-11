@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+ <RelativeLayout
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff">
+ 
+	
+	<Button
+        android:id="@+id/frag1hide"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/icon_menu"/>
+
+ 	<FrameLayout 
+   	    android:id="@+id/main_fragment_container"
+        android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@+id/frag1hide" />
+ 	
+	<FrameLayout 
+	         android:id="@+id/overlay_fragment_container"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+</RelativeLayout>
+
+</merge>

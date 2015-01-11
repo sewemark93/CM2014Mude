@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingBottom="20dp"
+    android:orientation="vertical" >
+    
+     <Button
+        android:id="@+id/search_categoriabutton"
+        android:gravity="center"
+		android:textSize="7pt"
+		android:padding="0dp"
+ 	    android:background="#EEEEEE"
+        android:layout_width="65dp"
+   		android:layout_height="35dp"
+		android:text="@string/Categoria" />
+      <ListView
+        android:id="@+id/listcategory"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+      <Button
+        android:id="@+id/search_databutton"
+ 	    android:gravity="center"
+ 	    android:padding="0dp"
+ 	    android:background="#DDDDDD"
+ 	    android:textSize="7pt"
+ 	    android:layout_marginTop="0dp"
+        android:layout_width="65dp"
+   		android:layout_height="35dp"
+   		android:text="@string/Date"/>
+      <ListView
+        android:id="@+id/listdata"
+        android:textSize="7pt"
+            android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+      </ListView>
+       <Button
+        android:id="@+id/search_desginerbutton"
+        android:gravity="center"
+        android:textSize="7pt"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0.5dp"
+        android:padding="0dp"
+ 	    android:background="#CCCCCC"
+        android:layout_width="65dp"
+   		android:layout_height="35dp"
+        android:text="@string/Designer"/>
+      <ListView
+        android:id="@+id/listdesigner"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+      </ListView>
+</LinearLayout>

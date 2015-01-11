@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="300dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+		     <Button
+		        android:id="@+id/galeria_button"
+		        android:gravity="center"
+			    android:layout_width="60dp"
+		        android:layout_height="60dp"
+				android:background="@drawable/icon_galeria" />
+		      <Button
+		        android:id="@+id/search_button"
+		 	    android:gravity="center"
+		        android:layout_width="60dp"
+		   		android:layout_height="60dp"
+		   		android:background="@drawable/icon_pesquisa"
+		         />
+		       <Button
+		         android:id="@+id/favourite_button"
+		         android:gravity="center"
+		         android:layout_width="60dp"
+		         android:layout_height="60dp"
+		         android:background="@drawable/icon_fav"/>
+		        <Button
+		         android:id="@+id/info_button"
+		         android:gravity="center"
+		         android:layout_width="60dp"
+		    	 android:layout_height="60dp"
+		         android:background="@drawable/icon_info"
+			        />
+		   <FrameLayout 
+		          android:id="@+id/search_fragment_container"
+		          android:layout_width="match_parent"
+		          android:layout_height="match_parent"/>
+</LinearLayout>

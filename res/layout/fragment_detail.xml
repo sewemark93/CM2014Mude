@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+<HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+	    
+                         <TableRow
+                            android:layout_width="900dp"
+             			    android:layout_height="265dp"
+              				android:weightSum="1.0"
+             			    android:background="#ffffff"
+                            android:gravity="center_vertical">
+                            
+                            <ImageView 
+								   android:id="@+id/left_arrow"
+								   android:src="@drawable/arrow_left"
+								   android:layout_width="wrap_content"
+								   android:layout_height="wrap_content"
+								   android:gravity="center_vertical"
+								   android:contentDescription="@string/description"
+								   android:layout_weight="0.08"/>
+                             <ImageView 
+								   android:id="@+id/image"
+								   android:layout_width="wrap_content"
+								   android:layout_height="wrap_content"
+								    android:layout_weight="0.86"
+								    android:contentDescription="@string/description"
+								   />
+                              <ImageView 
+								   android:id="@+id/right_arrow"
+								   android:src="@drawable/arrow_right"
+								   android:layout_width="wrap_content"
+								   android:layout_height="wrap_content"
+								   android:gravity="center_vertical"
+								    android:layout_weight="0.08"
+								    android:contentDescription="@string/description"
+								   />
+                          
+                       </TableRow>
+                  
+           
+ 
+      <TableLayout
+              android:layout_width="900dp"
+              android:layout_height="wrap_content"
+              android:paddingLeft="20dp"
+              android:background="#fff">
+                        
+                        <TableRow
+                               android:layout_width="fill_parent"
+                               android:layout_height="wrap_content">
+                             	 <TextView
+							        android:id="@+id/name"
+							        android:textColor="#000"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:textSize="45pt"/>
+				                             
+                         </TableRow>
+                          <View
+						             android:layout_width="850dp"
+						             android:layout_height="3dp"
+						             android:background="#000"/>
+                        <TableRow
+                                	 android:layout_width="fill_parent"
+                 					 android:layout_height="wrap_content">
+                         			<LinearLayout
+							         android:layout_width="wrap_content"
+							         android:layout_height="wrap_content"
+							         android:orientation="horizontal"
+							         android:layout_weight="0.60">
+            
+                             		 <TextView
+							         android:id="@+id/textviewname"
+							         android:layout_width="wrap_content"
+							         android:layout_height="wrap_content"
+							         android:layout_gravity="bottom"
+							         android:textColor="#000"
+							         android:textSize="22pt"
+							         />
+                              
+                           			 <Button
+							          android:id="@+id/moreinfobutton"
+							          android:layout_width="60dp"
+							          android:layout_height="60dp"
+							          android:layout_gravity="right"
+							          android:background="@drawable/icon_menu"
+							        />
+                              
+				           			</LinearLayout> 
+                           			 <Button
+								        android:id="@+id/likebutton"
+								        android:layout_width="60dp"
+									    android:layout_height="60dp"
+									    android:layout_gravity="right"
+								        android:background="@drawable/fav" />
+						     		<Button
+								        android:id="@+id/facebookbutton"
+								        android:layout_width="60dp"
+									    android:layout_height="60dp"
+									    android:layout_gravity="right"
+								        android:background="@drawable/icon_facebook"/>
+						             <Button
+								        android:id="@+id/twitterbutton"
+								        android:layout_width="60dp"
+									    android:layout_height="60dp"
+									    android:layout_gravity="right"
+								        android:background="@drawable/icon_twitter"
+						         />
+                        </TableRow>
+        </TableLayout>
+
+        <FrameLayout 
+            android:id="@+id/author_fragment_container"
+            android:layout_width="900dp"
+            android:layout_height="fill_parent"
+            android:background="#fff" />
+     	<LinearLayout 
+    		android:layout_width="900dp"
+    		android:layout_height="wrap_content"
+       		android:paddingBottom="40dp"
+         	android:paddingTop="40dp"
+     		android:orientation="horizontal" >
+       			 <TableLayout
+           			android:layout_width="240dp"
+              		android:layout_height="120dp"
+                    android:paddingLeft="35dp"
+              		android:background="#ffffff">
+                        <TableRow>
+                    	       <TextView
+                    	           android:textColor="#000"
+							        android:id="@+id/categorialabel"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        android:text="@string/categoria"/>
+                              	<TextView
+                              	    android:textColor="#000"
+							        android:id="@+id/categoriavalue"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"/>
+              	
+               			</TableRow>
+                   		<TableRow>
+                   		     <TextView
+                   		            android:textColor="#000"
+							        android:id="@+id/tipolabel"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        android:text="@string/tipo" />
+                              <TextView
+                                    android:textColor="#000"
+							        android:id="@+id/tipovalue"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left" />
+                 	 </TableRow>
+                 	 <TableRow>
+                            
+                       
+              					 <TextView
+              					    android:textColor="#000"
+							        android:id="@+id/datalabel"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        android:text="@string/data"
+							         />
+                              <TextView
+                                    android:textColor="#000"
+							        android:id="@+id/datavalue"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left" />
+                 	 </TableRow>
+                 	 <TableRow>
+                         <TextView
+                             	    android:textColor="#000"
+							        android:id="@+id/designerlabel"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        android:text="@string/designer"
+							         />
+                              <TextView
+                                    android:textColor="#000"
+							        android:id="@+id/designervalue"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left" />
+                              
+                   	 </TableRow>
+                  	 <TableRow>
+                       
+                       <TextView
+                           			android:textColor="#000"
+							        android:id="@+id/fabricantelabel"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        android:text="@string/fabricante"
+							         />
+                              <TextView
+                                  	android:textColor="#000"
+							        android:id="@+id/fabricantevalue"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        
+							         />
+              					 
+                              
+               
+              			 </TableRow>
+                         <TableRow>
+                            
+                       
+              					 <TextView
+              					    android:textColor="#000"
+							        android:id="@+id/paislabel"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        android:text="@string/pais"
+							         />
+                              <TextView
+                                    android:textColor="#000"
+							        android:id="@+id/paisvalue"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        
+							         />
+              					 
+                              
+               
+              			 </TableRow>
+                         <TableRow>
+                            
+                       
+              					 <TextView
+              					    android:textColor="#000"
+							        android:id="@+id/corlabel"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        android:text="@string/cor"
+							         />
+                              <TextView
+                                    android:textColor="#000"
+							        android:id="@+id/corvalue"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							    
+							         />
+              					 
+                              
+               
+               			</TableRow>
+                         <TableRow>
+                            
+                       
+              					 <TextView
+              					    android:textColor="#000"
+							        android:id="@+id/materialslabel"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							        android:text="@string/materiais"
+							         />
+                              <TextView
+                                    android:textColor="#000"
+							        android:id="@+id/materialsvalue"
+							        android:layout_width="wrap_content"
+							        android:layout_gravity="left"
+							      
+							         />
+              					 
+                              
+               
+               			</TableRow>
+              </TableLayout>
+              <TextView
+                  					android:textColor="#000"
+							        android:id="@+id/objectdescription"
+							        android:layout_width="fill_parent"
+							        android:layout_height="wrap_content"
+							        android:paddingLeft="40dp"
+							         android:textSize="10pt"
+							    />
+				                    
+          </LinearLayout>
+    </LinearLayout>
+   </HorizontalScrollView>
+ </ScrollView>
